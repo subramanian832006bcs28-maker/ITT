@@ -1,0 +1,54 @@
+class class vehicle:
+   def __init__(self,make,year):
+      self.make=make
+      self.year=year
+   def display(self):
+      print(f"make:{self.make},year:{self.year}")
+class car(vehicle):
+   def __init__(self,make,year,model):
+      super().__init__(make,year)
+      self.model=model
+   def display(self):
+      print("__CAR DETAILS__")
+      super().display()
+      print(f"model:{self.model}")
+class bike(vehicle):
+   def __init__(self,make,year,type):
+      super(). __init__(make,year)
+      self.type=type
+   def display(self):
+      print("__BIKE DETAILS__")
+      super().display()
+      print(f"type of bike:{self.type}")
+car=car("THAR",2020,"4X")
+bike=bike("XL100",2018,"TVSCOPY")
+car.display()
+print()
+bike.display()
+e:
+   def __init__(self,make,year):
+      self.make=make
+      self.year=year
+   def display(self):
+      print(f"make:{self.make},year:{self.year}")
+class car(vehicle):
+   def __init__(self,make,year,model):
+      super().__init__(make,year)
+      self.model=model
+   def display(self):
+      print("__CAR DETAILS__")
+      super().display()
+      print(f"model:{self.model}")
+class bike(vehicle):
+   def __init__(self,make,year,type):
+      super(). __init__(make,year)
+      self.type=type
+   def display(self):
+      print("__BIKE DETAILS__")
+      super().display()
+      print(f"type of bike:{self.type}")
+car=car("THAR",2020,"4X")
+bike=bike("XL100",2018,"TVSCOPY")
+car.display()
+print()
+bike.display()
