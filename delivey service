@@ -1,0 +1,10 @@
+x=int(input("Enter the service charges:"))
+y=int(input("Enter the service charges:"))
+if(x<y):
+   print("First delivery service")
+elif(x==y):
+   print("Any delivery service")
+elif(x>y):
+   print("Second delivey service")
+else:
+   print("invaild")
