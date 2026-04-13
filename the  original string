@@ -1,0 +1,5 @@
+s=input("Enter the  original string")
+oldstring=input("Enter the word to replace:")
+newword=input("Enter the newword:")
+result=s.replace(oldstring,newword)
+print("new string:",result)
