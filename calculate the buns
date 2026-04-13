@@ -1,0 +1,8 @@
+
+a=int(input("Enter the no of buns:"))
+if(a<6):
+   print("NO")
+elif(a%4==2):
+   print("YES")
+else:
+   print("NO")
