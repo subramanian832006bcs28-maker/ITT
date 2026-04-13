@@ -1,0 +1,21 @@
+l=eval(input("enter your list"))
+n=int(input("enter element to find occurrence"))
+li=len(l)
+print(l)
+c=0
+m=l.index(n)
+if n in l:
+   for i in range(li):
+      if l[i]==n:
+         c+=1
+   for j in range(li-1,0,-1):
+      if l[j]==n:
+         r=j
+         break
+      else:
+         pass
+else:
+   print("invalid input")
+print("first occurrence",m)
+print("last occurrence",r)
+print("total occurrence",c)
