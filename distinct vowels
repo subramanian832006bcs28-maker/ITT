@@ -1,0 +1,11 @@
+s=input("enter your string:")
+l=[]
+d="aeiouAEIOU"
+for i in s:
+   if i in d:
+      if s.count(i)==1:
+         l.append(i)
+      else:
+         pass
+print("distinct vowels are:")
+print(set(l))
