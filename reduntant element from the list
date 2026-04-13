@@ -1,0 +1,9 @@
+l=eval(input("enter your list"))
+l1=[]
+for i in l:
+   if l.count(i)==1:
+      l1.append(i)
+   else:
+      pass
+s=set(l1)
+print("the reduntant element from the list as set is:",s)
