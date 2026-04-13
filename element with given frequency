@@ -1,0 +1,38 @@
+print("                     ____menu____           ")
+print('''         1.to find second largest element
+         2.to find product of list element
+         3.to find element with given frequency''')
+n=int(input("enter your choice"))
+if n>3 or n==0:
+   print("invalid choice")
+else:
+   b=int(input("enter number of elements"))
+   l=[]
+   for i in range(b):
+      a=int(input("enter element"))
+      l.append(a)
+   if n==1:
+      e=[]
+      for i in l:
+          if i not in e:
+            e.append(i)
+      e.sort()
+      s=len(e)
+      print("second largest:",e[s-2])
+   elif n==2:
+      d=1
+      for i in l:
+         d*=i
+      print("the product of list is:",d)
+   elif n==3:
+      f=int(input("enter freqency"))
+      e=[]
+      for i in l:
+         if i not in e:
+            e.append(i)
+      for j in e:
+         b=l.count(j)
+         if b==f:
+            print(j)
+         else:
+            pass
