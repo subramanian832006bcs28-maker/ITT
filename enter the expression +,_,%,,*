@@ -1,0 +1,24 @@
+n=input("enter your expression in form of(a+b):")
+s1="+"
+s2="-"
+s3="*"
+s4="/"
+def sum_(a,b):
+   return a+b
+def sub_(a,b):
+   return a-b
+def mul_(a,b):
+   return a*b
+def div_(a,b):
+   return a/b
+for i in n:
+   if i in s1:
+      print(sum_(int(n[0]),int(n[2])))
+   elif i in s2:
+      print(sub_(int(n[0]),int(n[2])))
+   elif i in s3:
+      print(mul_(int(n[0]),int(n[2])))
+   elif i in s4:
+      print(div_(int(n[0]),int(n[2])))
+   else:
+      pass
