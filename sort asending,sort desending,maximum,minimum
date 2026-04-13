@@ -1,0 +1,27 @@
+print("         ------MENU------")
+print('''          1.reverse
+          2.sort asending
+          3.sort desending
+          4.maximum
+          5.minimum
+          ''')
+n=int(input("enter your choice"))
+if n>0 and n<6:
+   l=eval(input("enter your list"))
+   if n==1:
+      l.reverse()
+      print(l)
+   elif n==2:
+      l.sort()
+      print(l)
+   elif n==3:
+      l.sort(reverse=True)
+      print(l)
+   elif n==4:
+      print(max(l))
+   elif n==5:
+      print(min(l))
+   else:
+      pass
+else:
+   print("invalid choive")
