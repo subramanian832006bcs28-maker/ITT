@@ -1,0 +1,6 @@
+a= int (input("enter the first number:"))
+b= int (input("enter the second number:"))
+if (0<=a<=1000 and 0<=b<=1000):
+   print("sum:",a+b)
+else:
+   print ("invalid number")
