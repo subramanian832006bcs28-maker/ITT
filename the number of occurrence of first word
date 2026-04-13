@@ -1,0 +1,11 @@
+s=input("Enter string:")
+a=s.split()
+l=len(a)
+b=a[0]
+c=0
+for i in range(l):
+  if a[i]==b:
+     c+=1
+  else:
+     pass
+print("the number of occurrence of first word is:",c)
