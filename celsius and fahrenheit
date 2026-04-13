@@ -1,0 +1,6 @@
+c=int(input("enter celsius:"))
+if(-50<c<=100):
+   f=(c*9/5)+32;
+   print("the fahrenheit:",f)
+else:
+      print ("invalid")
