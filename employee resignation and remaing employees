@@ -1,0 +1,28 @@
+import gc
+class employee:
+   class address:
+      def __init__ (self,struct,city,zipcode):
+          self.struct=struct
+          self.city=city
+          self.zipcode=zipcode
+      def displayaddress(self):
+          print(f"address:{self.struct},{self.city},{self.zipcode}")
+   def __init__ (self,empid,name,struct,city,zipcode):
+      self.empid=empid
+      self.name=name
+      self.address=employee.address(struct,city,zipcode)
+   def display_info(self):
+       print(f"Employee id:{self.empid}")
+       print(f"name:{self.name}")
+       self.address.displayaddress()
+   def __del__(self):
+       print(f"Employee: {self.name}(id:{self.empid})record.deleted")
+emp1=employee(103,"kabes","246middle st","mother land","12468")
+emp2=employee(109,"arun","862south st","north land","67904")
+emp1.display_info()
+emp2.display_info()
+print("\n __employee resignation __")
+del emp1
+gc.collect()
+print("\n remaing employees:")
+emp2.display_info()
