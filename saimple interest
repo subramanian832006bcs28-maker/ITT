@@ -1,0 +1,5 @@
+P = int (input())
+R = int (input())
+T = int (input())
+simple_interest = (P * R * T) /100
+print(float(simple_interest))
