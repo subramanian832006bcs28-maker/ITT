@@ -1,0 +1,16 @@
+l=[[1,2,3],[3,2,1],[4,3,2]]
+l1=[[1,2,3],[4,3,2],[5,6,4]]
+print("__MULTIPLUICATION OF TWO MATRIX__")
+rev=[[0,0,0],[0,0,0],[0,0,0]]
+for i in range(3):
+   for j in range(3):
+      for k in range(3):
+         rev[i][j]+=l[i][k]*l1[k][j]
+print("row wise")
+for i in rev:
+   print(i)
+print("matrix wise")
+for i in rev:
+   for j in i:
+      print(j,end="  ")
+   print()
