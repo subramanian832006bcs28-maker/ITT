@@ -1,0 +1,6 @@
+l= int (input("enter the length:"))
+b= int (input("enter the breadth:"))
+if(1<=l<=100 and 1<=b<=100):
+   print("The Area:",l*b)
+else:
+   print (invalid)
