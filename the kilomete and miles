@@ -1,0 +1,3 @@
+a=int(input("enter the kilomete"))
+c=0.621371*a
+print("enter the miles",c)
