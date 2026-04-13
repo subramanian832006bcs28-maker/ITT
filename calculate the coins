@@ -1,0 +1,24 @@
+t=int(input("Enter the coin:"))
+for i in range(t):
+   a=int(input("enter the suresh coins:"))
+   b=int(input("enter the sundar coins:"))
+   c=int(input("enter the raja coins:"))
+   d=int(input("enter the suresh coins:"))
+   if a<b:
+      print("b is the winner")
+      a=a+c
+   else:
+      print("a is the winner")
+      b=b+c
+   if a<b:
+      print ("b is the winner")
+      a=a+d
+   else:
+      print("a is the winner")
+      b=b+d
+   if a<b:
+      print ("b is the final winner")
+      a=a+d
+   else:
+      print("a is the final winner")
+      b=b+d
