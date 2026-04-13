@@ -1,0 +1,8 @@
+t=eval(input("enter ur tuple"))
+print("given tuple",t)
+print("unique elements in tuple are")
+for i in t:
+   if t.count(i)==1:
+      print(i)
+   else:
+      pass
