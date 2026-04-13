@@ -1,0 +1,5 @@
+l=eval(input("enter ur list:"))
+print("orginal list",l)
+print("reverse without using inbuilt",l[::-1])
+l.reverse()
+print("reverse using inbuilt",l)
