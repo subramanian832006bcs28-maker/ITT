@@ -1,0 +1,24 @@
+print("__menu__")
+print("""1.count of tuple elements
+      2.maximum
+      3.minimum
+      4.length
+      5.exit""")
+t=eval(input("enter your tuple"))
+while True:
+   n=int(input("enter your choice"))
+   if n==1:
+      g=int(input("enter the element:"))
+      print(t.count(g))
+   elif n==2:
+      print("max of tuple is",max(t))
+   elif n==3:
+      print("min of tuple",min(t))
+   elif n==4:
+      print("lenth of tuple",len(t))
+   elif n==5:
+      print("exiting...")
+      break
+   else:
+      print("invalid choice")
+      break
