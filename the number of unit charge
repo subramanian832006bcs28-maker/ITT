@@ -1,0 +1,11 @@
+u=int(input("enter the number of unit"))
+if u<=100:
+      print("no charge")
+elif u<=200:
+      c=(u-100)*5
+      print("total charge:%d"%c)
+elif u>200:
+   c=(u-200)*10+500
+   print("total charge:%d"%c)
+else:
+   print("in valid unit")
